@@ -74,6 +74,8 @@ header {
     position: relative;
 }
 #header-right li > a {
+    display: block;
+    height: 100%;
     transition: color 0.4s;
 }
 
@@ -99,7 +101,7 @@ header {
     color: #000;
     border-radius: 10px;
     background: #e5eded;
-    transition: background 0.2s;
+    transition: background 0.3s;
 }
 .btn-logIn:hover {
     background: #DADBDB;
@@ -112,7 +114,7 @@ header {
     color: #fff;
     border-radius: 10px;
     background: #000;
-    transition: background 0.2s;
+    transition: background 0.3s;
 }
 .btn-download:hover {
     background: #3E4043;

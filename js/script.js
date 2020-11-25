@@ -25,13 +25,9 @@ $(document).ready(
 
         links.mouseleave(
             function () {
-                links.css("color", "inherit");
+                $(this).css("color", "inherit");
             }
         );
-
-
-
-
 
     }
 );
