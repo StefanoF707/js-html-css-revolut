@@ -13,7 +13,6 @@ body {
 /* UTILITIES */
 ul {
     list-style: none;
-    height: 100%;
 }
 
 a {
@@ -21,9 +20,24 @@ a {
     text-decoration: none;
 }
 
-.active {
+.selected {
     font-weight: 500;
     color: #000;
+}
+
+.unselected {
+    color: inherit;
+    transition: color 0.2s;
+}
+.unselected:hover {
+    color: #000;
+}
+
+.active {
+    display: block;
+}
+.disabled {
+    display: none;
 }
 /* /UTILITIES */
 
@@ -31,7 +45,6 @@ a {
 header {
     display: flex;
     height: 100px;
-    border-bottom: 1px solid black;
 }
 
 #header-right,
@@ -43,6 +56,7 @@ header {
     width: 25%;
 }
 #header-left > ul {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -52,6 +66,7 @@ header {
     width: 75%;
 }
 #header-right > ul {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -59,9 +74,26 @@ header {
 }
 #header-right > ul > li {
     margin-left: 50px;
+    position: relative;
 }
-#header-right > ul > li:last-child {
-    margin-left: 20px;
+#header-right li > a {
+    transition: color 0.4s;
+}
+
+#header-right li > .cascading-menu {
+    display: none;
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    padding: 0 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 14px -8px #000000;
+}
+.cascading-menu > li {
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500;
 }
 
 .btn-logIn {
@@ -78,6 +110,7 @@ header {
 
 .btn-download {
     padding: 15px 25px;
+    margin-left: 10px;
     font-weight: 500;
     color: #fff;
     border-radius: 10px;
