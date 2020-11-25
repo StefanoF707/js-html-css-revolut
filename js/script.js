@@ -13,7 +13,7 @@ $(document).ready(
 
         links.mouseenter(
             function() {
-                $(this).css("color", "black");
+                $(this).css("color", "#000");
                 $(this).next().toggle(200,
                     function () {
                         cascadingMenu.css("display", "none");
@@ -23,15 +23,11 @@ $(document).ready(
             }
         );
 
-        cascadingMenuLinks.mouseleave(
+        links.mouseleave(
             function () {
-                $(this).css("color", "inherit");
+                links.css("color", "inherit");
             }
         );
-
-
-
-
 
 
 
