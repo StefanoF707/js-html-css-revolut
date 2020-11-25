@@ -36,9 +36,6 @@ a {
 .active {
     display: block;
 }
-.disabled {
-    display: none;
-}
 /* /UTILITIES */
 
 
