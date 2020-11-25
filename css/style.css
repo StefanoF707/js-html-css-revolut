@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #00000060;
+    font-weight: 400;
+}
+
+/* UTILITIES */
+ul {
+    list-style: none;
+    height: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.active {
+    font-weight: 500;
+    color: #000;
+}
+/* /UTILITIES */
+
+
+header {
+    display: flex;
+    height: 100px;
+    border-bottom: 1px solid black;
+}
+
+#header-right,
+#header-left {
+    height: 100%;
+}
+
+#header-left {
+    width: 25%;
+}
+#header-left > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#header-right {
+    width: 75%;
+}
+#header-right > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+#header-right > ul > li {
+    margin-left: 50px;
+}
+#header-right > ul > li:last-child {
+    margin-left: 20px;
+}
+
+.btn-logIn {
+    padding: 12px 22px;
+    font-weight: 500;
+    color: #000;
+    border-radius: 10px;
+    background: #e5eded;
+    transition: background 0.2s;
+}
+.btn-logIn:hover {
+    background: #DADBDB;
+}
+
+.btn-download {
+    padding: 15px 25px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 10px;
+    background: #000;
+    transition: background 0.2s;
+}
+.btn-download:hover {
+    background: #3E4043;
+}
